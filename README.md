@@ -5,7 +5,9 @@ This extension helps by creating a popup that displays keystrokes when typing.
 
 As recommended by the guide, a portable installation of MusicBee should be used during debugging.
 https://getmusicbee.com/downloads/
-Set its install location to the project folder
+
+Create a new folder ```MusicBee``` in main folder and set its install location there
+
 
 Follow the instructions under "Setting up Visual Studio to work with MusicBee" of this guide
 https://musicbee.fandom.com/wiki/Tutorial:_Creating_A_Simple_Plugin
