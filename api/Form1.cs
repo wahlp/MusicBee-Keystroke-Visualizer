@@ -31,9 +31,6 @@ namespace MusicBeePlugin
 
         private void GlobalHookKeyPress(object sender, KeyPressEventArgs e)
         {
-            //Debug.WriteLine("KeyPress: \t{0}", e.KeyChar);
-            //var key = e.KeyChar.ToString();
-
             // update text
             label1.Visible = true;
             label1.Text += e.KeyChar;
@@ -69,8 +66,7 @@ namespace MusicBeePlugin
 
 
             InitializeComponent();
-
-            Debug.WriteLine("Debug.WriteLine test");
+            
             Subscribe();
 
             timer1 = new System.Windows.Forms.Timer();
@@ -134,24 +130,6 @@ namespace MusicBeePlugin
             this.PerformLayout();
 
         }
-
-        //private void keydownEvent(object sender, KeyEventArgs e)
-        //{
-        //    //var key = e.KeyCode.ToString();
-        //    //// fix D0, D1, etc.
-        //    //if (key.Length == 2 && key.Substring(0, 1) == "D") {
-        //    //    key = key.Substring(1, 1);
-        //    //}
-            
-        //    //if (key.Length == 1) {
-        //    //    // update text
-        //    //    label1.Visible = true;
-        //    //    label1.Text += key;
-        //    //    // set countdown timer
-        //    //    counter = 3;
-        //    //    timer1.Start();
-        //    //}
-        //}
 
         private void timer1_Tick(object sender, EventArgs e)
         {
