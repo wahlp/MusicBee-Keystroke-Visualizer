@@ -102,6 +102,7 @@ namespace MusicBeePlugin
             this.label1.Size = new System.Drawing.Size(441, 51);
             this.label1.TabIndex = 0;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Visible = false;
             // 
             // label2
             // 
