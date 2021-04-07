@@ -31,12 +31,15 @@ namespace MusicBeePlugin
 
         private void GlobalHookKeyPress(object sender, KeyPressEventArgs e)
         {
-            // update text
-            label1.Visible = true;
-            label1.Text += e.KeyChar;
-            // reset countdown timer
-            counter = 12;
-            timer1.Start();
+            if (char.IsDigit(e.KeyChar) || char.IsLetter(e.KeyChar))
+            {
+                // update text
+                label1.Visible = true;
+                label1.Text += e.KeyChar;
+                // reset countdown timer
+                counter = 12;
+                timer1.Start();
+            }
         }
 
         public void Unsubscribe()
